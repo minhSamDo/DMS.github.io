@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: 'Poppins',sans-serif;
+  user-select:none;
+}
+body{
+  background-repeat: no-repeat;
+  background:url("../images/R.jpg") ;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center center;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  /* overflow:hidden; */
+}
+div#wrapper{
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+
+}
+/* div#body{
+  margin:0px 0px 0px 40px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 20%;
+} */
+div#body{
+  /* overflow:visible; */
+}
+header{
+  position:absolute;
+  top:0;
+  left:0;
+  width:94.7%;
+  height: 7%;
+  margin: 0px;
+  padding:40px ;/*t-p-b-t*/
+  display:flex;
+  align-items:center;
+  z-index:100;
+  justify-content: space-between;
+}
+
+#navigation #a {  width:50px;}
+
+.logo{
+  display: flex;
+  font-size:2.8em;
+  padding:40px;
+}
+
+.navigation a{
+  position:relative;
+  font-size:1.2em;
+  color:rgb(252, 143, 42);
+  text-decoration:none; /*các loại gạch chân(gạch chân trên,gạch chân dưới,gạch chân giauwx các phần tử */
+  margin-left:40px;
+  font-weight: 900;/*độ in đậm của chữ*/
+}
+
+.navigation a#a{
+  margin-left: 0px;
+}
+
+.navigation a#a::after{
+  width: 111px;
+}
+
+.navigation a#b::after{
+  width:90px;
+}
+
+.navigation a#c::after{
+  width: 62px;
+
+}
+
+/* .navigation a#d::after{
+  width:65px;
+} */
+
+.navigation a::after {
+  content:'';
+  position:absolute;
+  left:0;
+  bottom: -6px;
+  width:10px;
+  height:3px;
+  background:rgb(252, 143, 42);
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition:transform .2s; /*thời gian hiệu ứng*/
+}
+
+.navigation a:hover::after{
+  transform: scaleX(1);
+}
+
+.navigation .loginButton{
+  background-color: rgb(227, 234, 241);
+  margin-left:40px;
+  width: 80px;
+  height:35px;
+  border: 3px solid rgb(252, 143, 42);
+  outline:none;
+  border-radius:6px;
+  font-size:1em;
+  color:rgb(252, 143, 42);
+  font-weight:550;
+  cursor:pointer;
+  border-radius:15px;/*20%->bo thành hình tròn*/
+}
+.navigation .loginButton:hover{
+  text-decoration: underline;
+}
+
+.input-box input{
+  /* background:transparent; */
+  background-color: white;
+  backdrop-filter: blur(160px);
+  outline:none;
+}
+a.register-link{
+  padding: 10px;
+}
+
+ion-icon#\31 .md.hydrated{
+  padding-top: 8px;
+  position:absolute;
+  height: 20px;
+    width: 20px;
+}
+ion-icon#\32 .md.hydrated{
+  padding-top: 8px;
+  position:absolute;
+  height: 20px;
+    width: 20px;
+}
+ion-icon.return.md.hydrated{
+  border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 1px 0px 0px 0px;
+    margin-top: 8px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+/* //////////////////////////////*/
+.btn1{
+  background:transparent;
+  width: 50%;
+  height:30px;
+  border-radius:8px;
+  cursor:pointer;
+  backdrop-filter: invert(90%)blur(2px)brightness(1.16)saturate(0.9);
+  outline: 10px;
+}
+.btn2{
+  background:transparent;
+  width: 50%;
+  height:30px;
+  border-radius:8px;
+  cursor:pointer;
+  backdrop-filter: invert(90%)blur(2px)brightness(1.16)saturate(0.9);
+  outline: 10px;
+}
+button.btn1{
+  padding: 0px 5px 0px 5px;
+  margin: 0px 37px;/*chỉnh vị trí (button)*/
+}
+button.btn2{
+  padding: 0px 5px 0px 5px;
+  margin: 0px 37px;/*chỉnh vị trí (button)*/
+}
+button.btn1{
+  font-size:medium;
+}
+button.btn1::after{
+  transition: .5s;
+}
+button.btn1:hover{
+  text-decoration: underline;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:1.08em
+
+}
+
+
+button.btn2{
+  font-size:medium;
+}
+button.btn2::after{
+  transition: .5s;
+}
+button.btn2:hover{
+  text-decoration: underline;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:1.08em
+
+}
+h3 {
+  font-size: 27px;
+  padding: 0px 0px 10px 73px;
+  color: rgb(44, 42, 42);
+}
+
+/*//////////////////////////*/
+#\33{
+  padding:0px 0px 0px 26px;
+  border:5px;
+}
+.login-register p a{
+  font-weight:600;
+  text-decoration: none;
+}
+.login-register p a:hover{
+  text-decoration:underline;
+}
+.remember-forget a{
+  font-weight:600;
+  text-decoration: none;
+
+}
+.remember-forget a:hover{
+  text-decoration:underline;
+}
+div.remember-forget{
+  padding: 0px 0px 10px 8px;
+}
+div.login-register{
+  padding: 10px 0px 0px 34px;
+}
+label{
+  padding:0px 60px 15px 11px;
+}
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin: 18px 0px;
+}
+div.form-box-registation{
+  display:none;
+}
+
+div.form-box{
+  overflow:hidden;
+  transform: scale(0);
+  transition:transform .2s ease,height .2s ease;
+}
+div.form-box.active{
+  transform:scale(1);
+}
+div.input-box-pass{
+  position: relative;
+    width: 100%;
+    height: 20px;
+    margin: 18px 0px 12px;
+}
+
+button#test{
+
+}
+h4 {
+  display: inline-block;
+  font-size: 27px;
+  padding: 0px 0px 10px 101px;
+  color: rgb(44, 42, 42);
+}
+span#aa.close{
+  display:inline-block
+}
+dd#name1 {
+  font-size: 18px;
+  display: block;
+  margin: 0px 0px 10px 8px;
+  /* justify-content: start; */
+}
+
+div#name11 {
+  font: italic bold 10px arial,serif;
+  color: rgb(209, 211, 223);
+  display: block;
+  font-size: 24px;
+  margin: 0px 0px 10px 30px;
+}
+div#name22 {
+  font: italic bold 10px arial,serif;
+  color: rgb(187, 190, 207);
+  display: block;
+  font-size: 24px;
+  margin: 30px 0px 10px 30px;
+}
+
+
+input.passLG[type="password"]:focus {
+  outline: none;
+   /* Removes the outline */
+}
+input.passRG[type="password"]:focus {
+  outline: none;
+  /* Removes the outline */
+}
+
+ion-icon#mail.md.hydrated{
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+circle#dot1{/*////////////////chỉnh màu dấu chấm của icon mail/////////////////////// */
+}
+.search-container {
+  margin-left: 20px;
+  margin-top: 13px;
+  height: 23px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  /* background-color: #f2f2f2; */
+  background: linear-gradient(to right, #ffff99, #99ff99, #99ffff, #fffffe);
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.search-container::placeholder {
+  color: green; /* Change the color of the placeholder text */
+}
+
+.search-container:focus {
+  outline-color: green; /* Change the color of the outline when the input is focused */
+}
+
+.search-container::-webkit-input-placeholder {
+  color: green; /* Change the color of the placeholder text for webkit browsers */
+}
+
+.search-container:-moz-placeholder {
+  color: green; /* Change the color of the placeholder text for Mozilla Firefox */
+}
+
+.search-container::-moz-placeholder {
+  color: green; /* Change the color of the placeholder text for Mozilla Firefox (old syntax) */
+}
+
+.search-container:-ms-input-placeholder {
+  color: green; /* Change the color of the placeholder text for Microsoft Edge/Internet Explorer */
+}
+
+
+.search-input {
+  background: none;
+  border-radius: 5px;
+  height: 22px;
+  width: 400px;
+  position: relative;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+}
+ion-icon#deleteText.md.hydrated{
+  width: 27px;
+  margin-right: 5px;
+}
+
+ion-icon#search.md.hydrated{
+
+  opacity: 0.7;
+  margin-right: 4px;
+  margin-left: 2px;
+  width: 25px;
+}
+
+div.overlay {
+  margin-left: 56px;
+  position: absolute;
+  margin-top: 118px;
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: 77%;
+  /* opacity: 0.5; Set the desired color with opacity */
+}
+legend.block{
+
+}
+@media screen and (max-width: 1190px) {
+  h2.logo{
+    flex-direction:row;
+  }
+  na.navigation a {
+    margin-left:30px;
+
+  }
+  na.navigation{
+    display:flex;
+    flex-direction:row;
+    margin-top: 40px;
+  }
+  header#head{
+    flex-direction:column;
+  }
+  .logo{
+    margin: 0px 50px 0px 0px;
+    padding: 0px 20px 0px 20px;
+  }
+  .navigation a::after {
+    bottom: 6px;
+    height:3px;
+  }
+  .navigation .loginButton{
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+}
+
+
+
