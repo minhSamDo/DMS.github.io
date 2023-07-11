@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta gttp-equiv="X-UA-Compatible" content="ie=dege">
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+
+<body>
+  <header id="head"><!--thẻ header có bệnh width:94.7%-->
+    <h2 class="logo">DMS
+      <div class="search-container">
+        <ion-icon id="search" name="search-sharp"></ion-icon>
+        <input type="text" class="search-input" placeholder="Search ">
+        <ion-icon id="deleteText" onclick="Clear()" name="close">
+          <path style="opacity:0.8;" d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"></path>
+        </ion-icon>
+      </div>
+    </h2>
+    <legend class="block"></legend>
+
+
+    <na class="navigation" style="font-size:1.3em;">
+      <ion-icon id="mail" name="mail-unread-outline"></ion-icon>
+      <a id="a" href="#">Trang chủ</a>
+      <a id="b" href="#">Thể loại</a>
+      <a id="c" href="#">Filter</a>
+      <button id="e" class="loginButton" onclick="Switch()">Login</button>
+    </na>
+  </header>
+
+  <div id="wrapper">
+    <div class="form-box">
+      <span id="aa" class="close">
+        <ion-icon id="1" onmouseover="Change1()" name="close-circle-outline">
+        </ion-icon>
+        <ion-icon id="2" onmouseout="Change2()" onclick="Change3()" name="close-circle">
+        </ion-icon>
+        <script>document.getElementById("2").style.display = "none";
+        </script>
+        <h4>Login</h4>
+      </span>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail-open-outline"></ion-icon>
+          </span>
+          <input class="emailLG" size="30px" type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box-pass">
+          <span class="icon">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </span>
+          <input class="passLG" size="30px" type="Password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forget">
+          <label><input type="checkbox">Remember</label>
+          <a href="#">Forgot pass?</a>
+
+        </div>
+        <button type="submit" class="btn1">login</button>
+        <div class="login-register">
+          <p>Dont have an account<a href="#" class="register-link" onclick="Regist()">Register</a></p>
+        </div>
+      </form>
+    </div>
+    <!-- /*///////////////////*/ -->
+    <div class="form-box-registation">
+      <span id="a" class="close">
+        <ion-icon class="return" onclick="Return()" onmouseover="Change22()" onmouseout="Change11()" name="return-up-back-sharp"></ion-icon> <!--Đặt id trước khi sử dụng -->
+      </span>
+      <h3>Registation</h3>
+      <form action="#" onsubmit="submitForm(event)">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="people-outline"></ion-icon>
+          </span>
+          <input class="userRG" size="30px" type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail-open-outline"></ion-icon>
+          </span>
+          <input class="emailRG" size="30px" type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box-pass">
+          <span class="icon">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </span>
+          <input class="passRG" size="30px" type="Password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forget">
+          <label><input type="checkbox">I am a good user that do nothing to web</label>
+
+        </div>
+        <button type="submit" class="btn2">Register</button>
+      </form>
+    </div>
+    <!--///////////////////////////////////-->
+  </div>
+  <legend id="Container"></legend>
+  <div id="name11">Some thing:</div>
+  <li class="scroll-container">
+    <legend id="item2">
+      <ul id="item1">
+        <img id="kimino" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3"></div>
+        <nav id="block">
+          <dd id="name1">Sam dep trai</dd>
+          <a id="aa" href="#">Loại 1</a>
+          <a id="aa" href="#">Loại 2</a>
+          <a id="aa" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1">
+        <img id="kimino" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3"></div>
+        <nav id="block">
+          <dd id="name1">Sam dep trai</dd>
+          <a id="aa" href="#">Loại 1</a>
+          <a id="aa" href="#">Loại 2</a>
+          <a id="aa" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1">
+        <img id="kimino" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3"></div>
+        <nav id="block">
+          <dd id="name1">Sam dep trai</dd>
+          <a id="aa" href="#">Loại 1</a>
+          <a id="aa" href="#">Loại 2</a>
+          <a id="aa" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1">
+        <img id="kimino" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3"></div>
+        <nav id="block">
+          <dd id="name1">Sam dep trai</dd>
+          <a id="aa" href="#">Loại 1</a>
+          <a id="aa" href="#">Loại 2</a>
+          <a id="aa" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1">
+        <img id="kimino" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3"></div>
+        <nav id="block">
+          <dd id="name1">Sam dep trai</dd>
+          <a id="aa" href="#">Loại 1</a>
+          <a id="aa" href="#">Loại 2</a>
+          <a id="aa" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1">
+        <img id="kimino" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3"></div>
+        <nav id="block">
+          <dd id="name1">Sam dep trai</dd>
+          <a id="aa" href="#">Loại 1</a>
+          <a id="aa" href="#">Loại 2</a>
+          <a id="aa" href="#">Loại 2</a>
+        </nav>
+      </ul>
+    </legend>
+  </li>
+  <div id="name22">Something here</div>
+  <li class="scroll-containerA">
+    <legend id="item2A">
+      <ul id="item1A">
+        <img id="kiminoA" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3A"></div>
+        <nav id="blockA">
+          <dd id="name1A">Sam dep trai</dd>
+          <a id="aaA" href="#">Loại 1</a>
+          <a id="aaA" href="#">Loại 2</a>
+          <a id="aaA" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1A">
+        <img id="kiminoA" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3A"></div>
+        <nav id="blockA">
+          <dd id="name1A">Sam dep trai</dd>
+          <a id="aaA" href="#">Loại 1</a>
+          <a id="aaA" href="#">Loại 2</a>
+          <a id="aaA" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1A">
+        <img id="kiminoA" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3A"></div>
+        <nav id="blockA">
+          <dd id="name1A">Sam dep trai</dd>
+          <a id="aaA" href="#">Loại 1</a>
+          <a id="aaA" href="#">Loại 2</a>
+          <a id="aaA" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1A">
+        <img id="kiminoA" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3A"></div>
+        <nav id="blockA">
+          <dd id="name1A">Sam dep trai</dd>
+          <a id="aaA" href="#">Loại 1</a>
+          <a id="aaA" href="#">Loại 2</a>
+          <a id="aaA" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1A">
+        <img id="kiminoA" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3A"></div>
+        <nav id="blockA">
+          <dd id="name1A">Sam dep trai</dd>
+          <a id="aaA" href="#">Loại 1</a>
+          <a id="aaA" href="#">Loại 2</a>
+          <a id="aaA" href="#">Loại 2</a>
+        </nav>
+      </ul>
+
+      <ul id="item1A">
+        <img id="kiminoA" src="../images/foxMasksq.jpeg" alt="Image">
+        <div id="item3A"></div>
+        <nav id="blockA">
+          <dd id="name1A">Sam dep trai</dd>
+          <a id="aaA" href="#">Loại 1</a>
+          <a id="aaA" href="#">Loại 2</a>
+          <a id="aaA" href="#">Loại 2</a>
+        </nav>
+      </ul>
+    </legend>
+  </li>
+
+
+  <div class="overlay"></div><!--/////////////////////////////////////////////////-->
+
+
+
+
+  <style>
+    li.scroll-container {
+      /* overflow-x: scroll; */
+      border-radius: 20px;
+      backdrop-filter: grayscale(0.3)blur(1.6px);
+      margin: 0px 0px 0px 30px;
+      /* overflow: auto; */
+      scroll-behavior: smooth;
+      height: 390px;
+      width: 1030px;
+      border: none;
+      white-space: nowrap;
+      display: flex;
+      overflow: hidden;
+    }
+
+    div#item {
+      width: 280px;
+      height: 210px;
+    }
+
+    ul#item1 {
+      height: 320px;
+      width: 320px;
+      display: inline-block;
+      margin: 20px 0px 20px 20px;
+      padding: 0px;
+      overflow: hidden;
+      /*lưu ý*/
+    }
+
+    legend#item2 {}
+
+    img#kimino {
+      border-radius: 20px;
+      display: block;
+      width: 320px;
+      height: 240px;
+    }
+
+    div#item3 {
+      border-radius: 10px;
+      background-color: pink;
+      width: 70px;
+      height: 60px;
+      /* overflow: hidden; */
+      display: inline-block;
+      margin: 20px 0px 0px 0px;
+    }
+
+    nav#block {
+      margin: 5px 0px 5px 0px;
+      height: 50px;
+      width: 246px;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    a#aa {
+      text-decoration: none;
+      /*Nhớ từ khóa:"text"*/
+      margin: 0px 8px 0px 8px;
+      color: black;
+    }
+
+    /*///////////////////////////////////*/
+    li.scroll-containerA {
+      border-radius: 20px;
+      backdrop-filter: grayscale(0.3)blur(1.6px);
+      margin: 0px 0px 0px 30px;
+      /* overflow: auto; */
+      scroll-behavior: smooth;
+      height: 390px;
+      width: 1030px;
+      border: none;
+      white-space: nowrap;
+      display: flex;
+      overflow: hidden;
+    }
+
+    div#itemA {
+      width: 280px;
+      height: 210px;
+    }
+
+    ul#item1A {
+      height: 320px;
+      width: 320px;
+      display: inline-block;
+      margin: 20px 0px 20px 20px;
+      padding: 0px;
+      overflow: hidden;
+      /*lưu ý*/
+    }
+
+    legend#item2A {}
+
+    img#kiminoA {
+      border-radius: 20px;
+      display: block;
+      width: 320px;
+      height: 240px;
+    }
+
+    div#item3A {
+      border-radius: 10px;
+      background-color: pink;
+      width: 70px;
+      height: 60px;
+      /* overflow: hidden; */
+      display: inline-block;
+      margin: 20px 0px 0px 0px;
+    }
+
+    nav#blockA {
+      margin: 5px 0px 5px 0px;
+      height: 50px;
+      width: 246px;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    a#aaA {
+      text-decoration: none;
+      /*Nhớ từ khóa:"text"*/
+      margin: 0px 8px 0px 8px;
+      color: black;
+    }
+
+  </style>
+
+  <script>
+    // const appName = "Cốc Cốc";
+    // if (process.modules[appName] !== null) {
+    //   alert("You are currently using the application-i-dont-like. Please exit the application and try accessing the website again");
+    //   return false; // prevent form submission and using cốc cốc to play web
+    // }
+
+    // window.addEventListener('resize', function () {
+    //   // Retrieve the width of the viewport when resized
+    //   var currentWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    //   // Log the maximum width in the console
+    //   console.log("Maximum width: " + currentWidth + "px");
+    // });
+    ///////////////////////Kiểm tra max width of web
+
+
+    var scrollBox = document.querySelector('.scroll-container');
+    var scrollBox1 = document.querySelector('.scroll-containerA');
+    document.body.style.zoom = 0.97;
+    scrollBox.addEventListener('wheel', function (event) {
+      event.preventDefault();
+
+      var scrollAmount = event.deltaY * 2.7;
+
+      scrollBox.scrollLeft += scrollAmount;
+      console.log(scrollBox.scrollLeft)
+    });
+    scrollBox1.addEventListener('wheel', function (event) {
+      event.preventDefault();
+
+      var scrollAmount = event.deltaY * 2.7;
+
+      scrollBox1.scrollLeft += scrollAmount;
+      console.log(scrollBox1.scrollLeft)
+    });
+    function Clear () {
+      document.querySelector('.search-input').value = '';
+    }
+
+  </script>
+
+  <script>//
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 100) {
+          $(window).scrollTop(0); // makes the image follow as you scroll down
+        }
+      });
+    });
+
+
+    document.body.style.zoom = 0.97;
+    document.querySelector("#fileInput").addEventListener("change", function () {
+      const reader = new FileReader();
+
+      reader.addEventListener("load", () => {
+        // console.log(reader.result)
+        localStorage.setItem("recent-image", reader.result);
+      })
+
+      reader.readAsDataURL(this.files[0]);//có thể dùng loop
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const recentImageData = localStorage.getItem("recent-image");
+      if (recentImageData) {
+        document.querySelector("body").setAttribute("background", recentImageData)
+      }
+    })
+    ///////////////////////////////////
+    function submitForm (event) {
+      event.preventDefault();
+    }
+
+    function disableTab (event) {
+      if (event.keyCode === 9) {
+        alert("Please do not press the Tab key while the form is submitting.");
+      }
+    }
+    document.addEventListener("keydown", disableTab);
+
+    document.querySelector(".btn2").addEventListener('click', submitForm);
+
+    let acc = [
+      {
+        user: null,
+        email: null,
+        pass: null
+      }
+    ]
+    let sum = 0;
+    let rg = document.querySelector(".btn2");
+    rg.addEventListener('click', () => {
+      if (document.querySelector(".userRG").value.length <= 6 || document.querySelector(".passRG").value.length <= 6) {
+        alert("Try again next time,you sucker,its shorter then 6 letter!!!");
+      }
+      else {
+        acc[sum].user = document.querySelector(".userRG").value;
+        acc[sum].email = document.querySelector(".emailRG").value;
+        acc[sum].pass = document.querySelector(".passRG").value;
+        console.log(acc[sum], "ok");
+        sum++;
+      }
+    })
+    function Regist () {
+      document.querySelector(".form-box").style.display = "none";
+      document.querySelector(".form-box-registation").style.display = "block";
+      document.querySelector(".overlay").style.zIndex = 0;
+      document.querySelector(".form-box-registation").style.zIndex = 2;
+    }
+    function Return () {
+      document.querySelector(".form-box-registation").style.display = "none";
+      document.querySelector(".form-box").style.display = "block";
+    }
+
+    var element = document.getElementById('head');
+    element.style.opacity = "0.9";
+    element.style.filter = 'alpha(opacity=90)';
+    function Change1 () {
+      document.getElementById("1").style.display = "none";
+      document.getElementById("2").style.display = "block";
+    }
+    function Change2 () {
+      document.getElementById("2").style.display = "none";
+      document.getElementById("1").style.display = "block";
+    }
+    function Change22 () {
+      document.querySelector(".return").style.background = "rgb(107, 105, 170)";
+    }
+    function Change11 () {
+      document.querySelector(".return").style.background = "none"
+    }
+    function Change3 () {
+      document.querySelector(".form-box").classList.remove('active');
+      console.log("ok")
+    }
+  </script>
+
+
+  <script src="Bai.js"></script>
+  <script src="file-system.js"></script>
+  <script src="xhr.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
